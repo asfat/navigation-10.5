@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% load static %}  {# Load static files template library at the top #}
+
+{% block content %}
+    <h1>This is home page.</h1>
+    <img src="{% static 'bird1.jpeg' %}" alt="This is picture" />
+    {{block.super}}
+{% endblock %}
